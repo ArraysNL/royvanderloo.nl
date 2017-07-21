@@ -1,0 +1,31 @@
+// Biography
+.bio {
+    background-color: $brand-primary;
+    text-align: center;
+    padding: 30px;
+
+    .avatar {
+        @include circle(200px, transparant);
+    }
+
+    strong,
+    em {
+        display: block;
+    }
+
+    .social-link {
+        color: $body-color;
+    }
+
+    img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.bio-footer {
+    @extend .bio;
+
+    background-color: $white;
+    margin-bottom: 30px;
+}

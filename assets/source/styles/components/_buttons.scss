@@ -1,0 +1,24 @@
+.btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include border-radius($border-radius-lg);
+}
+
+.btn-white {
+    background-color: $white;
+}
+
+.btn-gradient {
+    color: $white;
+    @include background-horizontal($brand-secondary, $brand-primary);
+    @include gradient-border($brand-secondary, $brand-primary, 1px, 'to right');
+}
+
+    .btn-gradient:hover,
+    .btn-gradient:active {
+        color: $white;
+        @include background-horizontal($brand-primary, $brand-secondary);
+        @include gradient-border($brand-secondary, $brand-primary, 1px, 'to left');
+    }

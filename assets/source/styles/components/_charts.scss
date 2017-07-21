@@ -1,0 +1,40 @@
+.chart {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    display: inline-block;
+
+    &:after {
+        border: 1px solid transparent;
+        content: " ";
+        margin-bottom: 30px;
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    strong {
+        display: block;
+    }
+}
+
+.chart-mini {
+    @extend .chart;
+
+    width: 36px;
+    height: 36px;
+}
+
+.percent {
+    line-height: 110px;
+    z-index: 2;
+
+    &:after {
+        content: '%';
+        margin-left: 0.1em;
+    }
+}

@@ -1,0 +1,24 @@
+.header-top-border {
+	display: block;
+	height: 4px;
+	@include background-horizontal($brand-secondary, $brand-primary);
+}
+
+// Logo
+.logo {
+    font-size: 48px;
+    font-family: $font-family-secondary;
+    color: darken($body-color, 15);
+    font-weight: bold;
+
+    span,
+    div {
+        float: left;
+        display: inline-block;
+        height: 40px;
+    }
+
+    div {
+        margin: 26px 5px;
+    }
+}

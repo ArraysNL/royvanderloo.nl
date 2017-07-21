@@ -1,0 +1,38 @@
+body {
+    background-color: darken($white, 5);
+}
+
+a,
+a * {
+    @include transition();
+    cursor: pointer;
+}
+
+// Content blocks
+.content {
+    background: $white;
+    padding: 30px;
+    margin-bottom: 50px;
+
+    h1,
+    h2 {
+        margin-bottom: 0.5em;
+    }
+}
+
+// Personal info block
+.personal-info td {
+    vertical-align: top;
+    word-break: break-all;
+}
+
+.personal-info tr td:first-child {
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+@include media-breakpoint-between(md, lg) {
+    .personal-info td {
+        display: block;
+    }
+}
